@@ -29,8 +29,9 @@ public class Leap_year_or_not {
 			System.out.println(year+"not a leap year");
 		}
 		
-		
+		sc.close();
 
 	}
+	
 
 }
