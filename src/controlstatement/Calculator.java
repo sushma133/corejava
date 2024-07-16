@@ -36,22 +36,30 @@ public class Calculator {
 		
 		switch(opr) {
 		case 1:
-			System.out.println("Sum:"+(a+b));
+			System.out.println(a+b);
 	break;
 		case 2:
-			System.out.println("Subtraction:"+(a-b));
+			System.out.println(a-b);
 			break;
 		case 3:
-			System.out.println("Multiplication:"+(a*b));
+			System.out.println(a*b);
 			break;
-		case 4:
-			System.out.println("Divison:"+(a/b));
+		case 4:if(b==0) {
+			System.out.println("Invalid Division");
+		}else {
+			System.out.println(a/b);
+		}
 			break;
 		case 5:
-			System.out.println("Modulo:"+(a%b));
+			if(b==0){
+				System.out.println("Invalid Division");
+			}
+			else {
+			System.out.println(a%b);
+			}
 			break;
 			default:
-			System.out.println("Enter the valid option");
+			System.out.println(" Invalid operator");
 		}
 		
 		
